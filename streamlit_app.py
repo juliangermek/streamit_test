@@ -40,7 +40,16 @@ percentages = rf.predict_proba(features)
 st.subheader("Prediction")
 st.write(prediction[0])
 
-st.subheader("Percentages")
+st.subheader("Probabilities of all classes")
 st.write("Iris-setosa: ", percentages[0][0]*100)
 st.write("Iris-versicolor: ", percentages[0][1]*100)
 st.write("Iris-virginica: ", percentages[0][2]*100)
+
+st.text("")
+st.text("")
+st.text("")
+
+st.info('This is a purely informational message. If you click the button below, there will be celebration!')
+if st.button('Click for celebration'):
+    st.balloons()
+    st.balloons()
