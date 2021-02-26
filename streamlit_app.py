@@ -17,7 +17,7 @@ rf = RandomForestClassifier()
 rf.fit(X_train, y_train)
 
 # Streamlit
-st.header("Iris Classification Test")
+st.header("Iris Classification")
 
 image = Image.open("iris.jpg")
 st.image(image, use_column_width=True, output_format="jpg")
